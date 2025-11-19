@@ -1,0 +1,10 @@
+[project]
+name = "ai-agent-lekce1"
+version = "1.0.0"
+description = "AI Agent s nástroji - Lekce 1"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai>=1.66.3",
+    "python-dotenv>=1.0.1",
+]
