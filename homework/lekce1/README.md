@@ -175,7 +175,7 @@ AI AGENT S NÁSTROJI - LEKCE 1
 
 ## 👤 Autor
 
-[Tvoje jméno]  
+Ivan Dofek  
 AI Agenti - Lekce 1  
 Datum: 18.11.2025
 
