@@ -139,13 +139,8 @@ Model dostane kontext:
 
 ## 🎯 Ukázkový výstup
 
+### Příklad 1: Jednoduchý výpočet
 ```
-======================================================================
-AI AGENT S NÁSTROJI - LEKCE 1
-======================================================================
-
-📍 PŘÍKLAD 1: Jednoduchý výpočet
-----------------------------------------------------------------------
 🤖 AI Agent začíná...
 📝 Uživatel: Kolik je 123 krát 456?
 
@@ -157,7 +152,35 @@ AI AGENT S NÁSTROJI - LEKCE 1
   ✅ Výsledek: {"result": 56088}
 
 ⏳ Posílám výsledek nástroje zpět LLM modelu...
-💬 Finální odpověď: 123 krát 456 je 56 088.
+💬 Finální odpověď: Výsledek násobení 123 krát 456 je 56 088.
+```
+
+### Příklad 2: Slovní úloha
+```
+🤖 AI Agent začíná...
+📝 Uživatel: Mám 1500 Kč. Koupím 3 položky po 275 Kč. Kolik mi zbyde?
+
+⏳ Posílám dotaz LLM modelu...
+🔧 Model chce použít 1 nástroj(ů):
+
+  📌 Nástroj: calculate
+  📊 Argumenty: {'operation': 'multiply', 'a': 3, 'b': 275}
+  ✅ Výsledek: {"result": 825}
+
+⏳ Posílám výsledek nástroje zpět LLM modelu...
+💬 Finální odpověď: Celková cena za 3 položky po 275 Kč je 825 Kč. 
+                   1500 Kč - 825 Kč = 675 Kč. Zbude ti 675 Kč.
+```
+
+### Příklad 3: Otázka bez použití nástroje
+```
+📝 Uživatel: Jak dlouho bude trvat natřít stěnu jednomu pracovníkovi, 
+             když dva stejnou stěnu natírají hodinu?
+
+⏳ Posílám dotaz LLM modelu...
+💬 Odpověď (bez použití nástroje): Pokud dva pracovníci natřou stěnu 
+   za jednu hodinu, tak jednomu pracovníkovi by natření stejné stěny 
+   trvalo dvakrát déle. Takže jednomu pracovníkovi to zabere 2 hodiny.
 ```
 
 ## 🔧 Možná rozšíření
